@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="FunCodingOfWe">
     <link rel="stylesheet" href="./files/index.css">
-    <link href="css/thplayer.css" rel="stylesheet">
+    <link href="css/player.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -48,16 +48,25 @@
         <p><a href="#" target="_blank">微博</a></p>
         <p><a href="#" target="_blank">知乎</a></p>
     </div>
-    <div id="Thplayer" class="player-bgColor"></div>
-    <script type="application/javascript" src="js/jquery-1.8.0.min.js"></script>
-    <script type="application/javascript" src="js/thplayer.js?v=3"></script>
+    <script type="application/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="application/javascript" src="js/player.js?v=3"></script>
     <script>
-        $("#Thplayer").thplayer({
-               title: "以父之名",
-               author: "周杰伦",
-               cover: "http://p1.music.126.net/yjVbsgfNeF2h7fIvnxuZDQ==/18894007811887644.jpg",
-               music: "http://p2.music.126.net/KSqKHwTaDrQXHlY52TRwsA==/7704277977980035.mp3"
-        });
+       $.musicPlayer(
+				{
+					list:[
+						{"music":"http://p2.music.126.net/hlt3Th7mOa5LfZ-Zgg7H_w==/2045091627665349.mp3","cover":"http://p1.music.126.net/6xl0oJIv6kDL5VL1gpU8pQ==/1750422511426635.jpg","author":"5ive","title":"Until the Time Is Th"},
+						{"music":"http://p2.music.126.net/XlVcMDRl3vLWpPgH9VGG3A==/2017603836973778.mp3","cover":"http://p1.music.126.net/neJAl7Xkd12Z5ehVgNDMUw==/612427976717473.jpg","author":"98°","title":"Because Of You"},
+						{"music":"http://p2.music.126.net/Kq5C9KwVAFcq5U0IAylkVg==/2061584302089296.mp3","cover":"http://p1.music.126.net/k3nDmoTwhI25ycP1NOz4Jw==/821335186001472.jpg","author":"Anya Shesternina","title":"Running Late"},
+						{"music":"http://p2.music.126.net/XfDjBc19D8smmTkSUga0sA==/5707564859860456.mp3","cover":"http://p1.music.126.net/JSGJnLccpzQ4KeyRxBebDQ==/901599534820575.jpg","author":"Arash","title":"Arash (English versi"},
+						{"music":"http://p2.music.126.net/Accl94ME_AYkSl5xIElAYQ==/5984641790040507.mp3","cover":"http://p1.music.126.net/FVbsEC3ylU9tFe85WffJYg==/6654244372016039.jpg","author":"Avril Lavigne","title":"Let Me Go"},
+						{"music":"http://p2.music.126.net/xn4A3zLho7T4sWkwDQqGXw==/3393092891670458.mp3","cover":"http://p1.music.126.net/6-TAXmoB_kEJagOf00aLig==/1781208836997879.jpg","author":"Avril Lavigne","title":"Complicated"},
+						{"music":"http://p2.music.126.net/YjsgtOrvKm4fnIUZvfD73w==/1348001255714386.mp3","cover":"http://p1.music.126.net/J2ngI43Lpjxa07zC8xxGmg==/2484896278797436.jpg","author":"Avril Lavigne","title":"Here"},
+						{"music":"http://p2.music.126.net/sMQOuilZWkIRUlxpTr_99Q==/3426078240765333.mp3","cover":"http://p1.music.126.net/h1-g69Lc_d1GTbpWGnRqUw==/109951163076997948.jpg","author":"Avril Lavigne","title":"Innocence"},
+						{"music":"http://p2.music.126.net/oEkb7ht7VW87dps_OkUL7g==/5806520906398925.mp3","cover":"http://p1.music.126.net/P-2uAbQrgtIZfYy8HxuY2g==/19069929672343699.jpg","author":"Backstreet Boys","title":"As Long as You Love "},
+						{"music":"http://p2.music.126.net/3KP6aRcaWlDc46SdtDOmCQ==/18972073137308603.mp3","cover":"http://p1.music.126.net/OEkTr8qjNJhlbiZy9cRoww==/109951163063194564.jpg","author":"Backstreet Boys","title":"Everybody (Backstree"},
+						{"music":"http://p2.music.126.net/HhdbP62xoi8pmICyEvvXrQ==/5876889650571088.mp3","cover":"http://p1.music.126.net/a9PzwwZdYlHF290C2vUMIw==/2542070884467509.jpg","author":"Backstreet Boys","title":"I Need You Tonight"}
+					]
+				});
     </script>
 <script>
     var weixin = document.querySelector(".icon-weixin");
